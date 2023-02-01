@@ -28,8 +28,8 @@
         />
       </div>
       <div class="button">
-        <a href="#">map</a>
-        <a href="#">discord</a>
+        <a href="http://209.126.84.212:2071/">map</a>
+        <a href="https://discord.com/invite/YMquCpZsTJ">discord</a>
         <a href="#join">join</a>
       </div>
     </header>
@@ -69,8 +69,16 @@
         Come join today and see for yourself why <b>Stencil</b> is the best
         around.
       </p>
-      <h2 class="ip" id="join">Join <b>StencilMC.net</b></h2>
-      <h2 class="ver">Always the latest version</h2>
+
+      <h2 class="ip" id="join">Join StencilMC.net</h2>
+      <button onclick="copyText()">Click to Copy IP</button>
+      <h2 class="ver">Supported Versions - <strong>1.19.x</strong></h2>
+      <script>
+        function copyText() {
+          navigator.clipboard.writeText("stencilmc.net");
+          confirm("Copied!");
+        }
+      </script>
     </div>
   </body>
 </html>
