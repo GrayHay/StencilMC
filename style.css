@@ -106,8 +106,6 @@ button{
 button:hover{
     background-color: black;
     color: white;
-    border-color: white;
-    border-radius: 7px;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
