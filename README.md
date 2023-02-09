@@ -1,3 +1,3 @@
 # StencilMC
 
-repo for http://stencilmc.net
+repo for https://stencilmc.net
