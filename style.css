@@ -20,6 +20,8 @@ header {
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    position: fixed;
+    z-index: 100;
 }
 .button a {
     text-decoration: none;
@@ -128,6 +130,8 @@ button:hover{
         justify-content: space-between;
         align-items: center;
         width: 100%;
+        position: fixed;
+        z-index: 100;
     }
     .button a {
         text-decoration: none;
