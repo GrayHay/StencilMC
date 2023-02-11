@@ -32,6 +32,8 @@
 
     gtag("config", "G-6SH0JK328E");
   </script>
+
+  <script src="./js/clipboard.js"></script>
   <body>
     <header>
       <div class="logo">
@@ -74,8 +76,9 @@
       </p>
       <p class="fade-in-touch">
         Our custom features include exclusive abilities that you won't find
-        anywhere else and custom ranks defined by you. And with our professional optimization and 3+ years experience, you'll never have
-        to worry about lag or downtime.
+        anywhere else and custom ranks defined by you. And with our professional
+        optimization and 3+ years experience, you'll never have to worry about
+        lag or downtime.
       </p>
       <p class="fade-in-touch">
         But be warned, the night is not for the faint of heart. The mobs have
@@ -94,11 +97,18 @@
 
       <h2 class="ip" id="join">Join StencilMC.net</h2>
       <button onclick="copyText()">Click to Copy IP</button>
+      <small id="copied">Copied to Clipboard!</small>
       <h2 class="ver">Supported Versions - <strong>1.19.x</strong></h2>
       <script>
         function copyText() {
-          navigator.clipboard.writeText("stencilmc.net");
-          confirm("Copied!");
+          Clipboard.copy("stencilmc.net");
+
+          let small = document.getElementById("copied");
+          small.style.opacity = 1;
+
+          setTimeout(() => {
+            small.style.opacity = 0;
+          }, 2000);
         }
       </script>
     </div>
