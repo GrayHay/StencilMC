@@ -213,6 +213,7 @@ button:hover{
         max-width: 15%;
         margin-inline: auto;
         margin-bottom: 2%;
+        cursor: pointer;
     }
     button:hover{
         background-color: black;
@@ -227,6 +228,11 @@ button:hover{
         max-width: 15%;
         margin-inline: auto;
         margin-bottom: 2%;
+    }
+    small {
+        color: #fff;
+        opacity: 0;
+        transition: opacity 0.5s;
     }
 } 
 
