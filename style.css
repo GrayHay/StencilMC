@@ -51,6 +51,7 @@ header {
     height: 80%;
     background-size:cover;
     background-position: bottom;
+    margin-top: 77.1px;
 }
 .hero img {
     display: flex;
@@ -149,6 +150,7 @@ button{
         height: 80%;
         background-size:cover;
         background-position: bottom;
+        margin-top: 77.1px;
     }
     .hero img {
         display: flex;
