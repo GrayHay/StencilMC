@@ -1,116 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="style.css" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>stencilmc.net</title>
-    <link
-      rel="icon"
-      type="image/x-icon"
-      href="https://cdn.discordapp.com/attachments/1009939250927636580/1059999427512774756/server-icon.png"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-6SH0JK328E"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-6SH0JK328E");
-  </script>
-
-  <script src="./js/clipboard.js"></script>
-  
-  <header>
-  <div class="logo">
-    <img
-      src="https://cdn.discordapp.com/attachments/1009939250927636580/1062156358918619247/Stencil.png"
-      alt="Logo"
-    />
-  </div>
-  <div class="button">
-    <a
-      href="http://209.126.84.212:2071/"
-      target="_blank"
-      rel="noopener noreferrer"
-      >map</a
-    >
-    <a
-      href="https://discord.com/invite/YMquCpZsTJ"
-      target="_blank"
-      rel="noopener noreferrer"
-      >discord</a
-    >
-    <a href="#join">join</a>
-  </div>
-</header>
-  <body>
-    <div class="hero">
-      <img
-        src="https://cdn.discordapp.com/attachments/1009939250927636580/1067895184752390165/StencilBigLongBubbleThing.png"
-        alt="Stencil"
-      />
-    </div>
-
-    <div class="intro">
-      <h1>Welcome to <b>Stencil</b></h1>
-      <p class="fade-in-touch">
-        We offer advanced gameplay, custom features, and the best community
-        around. Our terrain is unlike anything you've ever seen before, and
-        you'll quickly fall in love with the stunning landscapes and intricate
-        details.
-      </p>
-      <p class="fade-in-touch">
-        Our custom features include exclusive abilities that you won't find
-        anywhere else and custom ranks defined by you. And with our professional
-        optimization and 3+ years experience, you'll never have to worry about
-        lag or downtime.
-      </p>
-      <p class="fade-in-touch">
-        But be warned, the night is not for the faint of heart. The mobs have
-        been buffed based on your combined skill level and progress, making them
-        more challenging and exciting to fight. But don't worry, with our
-        community of fun and skilled players by your side, you'll always have
-        the support and resources you need to overcome even the toughest
-        challenges.
-      </p>
-      <p class="fade-in-touch">
-        We have a vibrant and active community of players who are always happy
-        to welcome new members and help out with any questions you may have.
-        Come join today and see for yourself why <b>Stencil</b> is the best
-        around.
-      </p>
-
-      <h2 class="ip" id="join">Join Stencil</h2>
-      <button onclick="copyText()">Click to Copy IP</button>
-      <small id="copied">Copied to Clipboard!</small>
-      <h2 class="ver">Supported Versions - <strong>1.19.x</strong></h2>
-      <script>
-        function copyText() {
-          Clipboard.copy("stencilmc.net");
-
-          let small = document.getElementById("copied");
-          small.style.opacity = 1;
-
-          setTimeout(() => {
-            small.style.opacity = 0;
-          }, 2000);
-        }
-      </script>
-    </div>
-  </body>
+   <head>
+      <link rel="stylesheet" href="style.css" />
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>stencilmc.net</title>
+      <link
+         rel="icon"
+         type="image/x-icon"
+         href="https://cdn.discordapp.com/attachments/1009939250927636580/1059999427512774756/server-icon.png"
+         />
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link
+         href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+         rel="stylesheet"
+         />
+   </head>
+   <!-- Google tag (gtag.js) -->
+   <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6SH0JK328E"
+      ></script>
+   <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
+      
+      gtag("config", "G-6SH0JK328E");
+   </script>
+   <script src="./js/clipboard.js"></script>
+   <header>
+      <div class="logo">
+         <img
+            src="https://cdn.discordapp.com/attachments/1009939250927636580/1062156358918619247/Stencil.png"
+            alt="Logo"
+            />
+      </div>
+      <div class="button">
+         <a
+            href="http://209.126.84.212:2071/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >map</a
+            >
+         <a
+            href="https://discord.com/invite/YMquCpZsTJ"
+            target="_blank"
+            rel="noopener noreferrer"
+            >discord</a
+            >
+         <a href="#join">join</a>
+      </div>
+   </header>
+   <body>
+      <div class="hero">
+         <img
+            src="https://cdn.discordapp.com/attachments/1009939250927636580/1067895184752390165/StencilBigLongBubbleThing.png"
+            alt="Stencil"
+            />
+      </div>
+      <div class="intro">
+         <h1>Welcome to <b>Stencil</b></h1>
+         <p class="fade-in-touch">
+            We offer advanced gameplay, custom features, and the best community
+            around. Our terrain is unlike anything you've ever seen before, and
+            you'll quickly fall in love with the stunning landscapes and intricate
+            details.
+         </p>
+         <p class="fade-in-touch">
+            Our custom features include exclusive abilities that you won't find
+            anywhere else and custom ranks defined by you. And with our professional
+            optimization and 3+ years experience, you'll never have to worry about
+            lag or downtime.
+         </p>
+         <p class="fade-in-touch">
+            But be warned, the night is not for the faint of heart. The mobs have
+            been buffed based on your combined skill level and progress, making them
+            more challenging and exciting to fight. But don't worry, with our
+            community of fun and skilled players by your side, you'll always have
+            the support and resources you need to overcome even the toughest
+            challenges.
+         </p>
+         <p class="fade-in-touch">
+            We have a vibrant and active community of players who are always happy
+            to welcome new members and help out with any questions you may have.
+            Come join today and see for yourself why <b>Stencil</b> is the best
+            around.
+         </p>
+         <h2 class="ip" id="join">Join Stencil</h2>
+         <button onclick="copyText()">Click to Copy IP</button>
+         <small id="copied">Copied to Clipboard!</small>
+         <h2 class="ver">Supported Versions - <strong>1.19.x</strong></h2>
+         <script>
+            function copyText() {
+              Clipboard.copy("stencilmc.net");
+            
+              let small = document.getElementById("copied");
+              small.style.opacity = 1;
+            
+              setTimeout(() => {
+                small.style.opacity = 0;
+              }, 2000);
+            }
+         </script>
+      </div>
+   </body>
 </html>
