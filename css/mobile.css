@@ -92,4 +92,7 @@
     .antiMobile {
         display: none;
     }
+    button {
+        display: none;
+    }
 }
