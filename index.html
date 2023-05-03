@@ -1,158 +1,120 @@
-/*START DESKTOP LAYOUT*/
-@media only screen and (min-width: 600px) {
-    header {
-        background-image: url(https://media.discordapp.net/attachments/1078717279191171133/1078848836052717608/betterGradint.png);
-        background-size:cover;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-        position: fixed;
-        z-index: 100;
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/desktop.css" />
+    <link rel="stylesheet" href="css/mobile.css" />
+    <link rel="stylesheet" href="css/pagesetup.css" />
+    <meta property="og:title" content="StencilMC.net - Minecraft Server" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>stencilmc.net</title>
+    <link rel="icon" type="image/x-icon" href="server-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <!-- Google tag (gtag.js) -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-6SH0JK328E"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
     }
-    .button a {
-        text-decoration: none;
-        color: white;
-        font-size: 30px;
-        margin-right: 30px;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 1px;
-        padding-bottom: 1px;
-        background-color: black;
-        border-radius: 7px;
-        transition: background-color .55s ease-in-out;
-    }
-    .button a:hover {
-        text-decoration: none;
-        color: rgb(58, 58, 64);
-        font-size: 30px;
-        margin-right: 30px;
-        padding-left: 15px;
-        padding-right: 15px;
-        padding-top: 1px;
-        padding-bottom: 1px;
-        background-color: white;
-        border-radius: 7px;
-        transition: background-color .2s ease-in-out;
-    }
-    .logo img {
-        width: 60px;
-        height: auto;
-        margin-left: 10px;
-        margin-top: 10px;
-        margin-right: 10px;
-        filter: drop-shadow(3px 3px 5px black);
-        opacity: 1.0;
-        transition: opacity .55s ease-in-out;
-    }
-    .logo img:hover {
-        width: 60px;
-        height: auto;
-        margin-left: 10px;
-        margin-top: 10px;
-        margin-right: 10px;
-        filter: drop-shadow(3px 3px 5px black);
-        opacity: 0.5;
-        transition: opacity .2s ease-in-out;
-    }
-    
-    /*BEGINNING OF MAIN PAGE CONTENT*/
-    
-    .hero {
-        background-image: url(https://cdn.discordapp.com/attachments/1078717279191171133/1079138616908976209/2022-06-08_11.37.51.png);
-        height: 78vh;
-        background-size:cover;
-        background-position: bottom;
-        padding-top: 77.1px;
-    }
-    .hero img {
-        width: auto;
-        height: 70%;
-    }
-    .intro {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        
-    }
-    .intro h1{
-        color: white;
-        margin-top: 2%;
-        cursor: default;
-        padding-bottom: 10px;
-        font-size: 100px;
-    }
-    .intro p {
-        color:white;
-        margin-bottom: 10%;
-        cursor: default;
-        font-size: 30px;
-        margin-left: 20%;
-        margin-right: 20%;
-    }
-    .ip{
-        color: white;
-        margin-bottom: 2%;
-        text-align: center;
-        font-size: 100px;
-    }
-    .ver{
-        color: white;
-        margin-bottom: 20%;
-        cursor: default;
-        text-align: center;
-        margin-top: 2%;
-    }
-    button{
-        background-color: white;
-        color: black;
-        border: none;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        border-radius: 7px;
-        max-width: 700px;
-        margin-inline: auto;
-        cursor: pointer;
-        transition: background-color .55s ease-in-out;
-    }
-    button:hover{
-        background-color: rgb(58, 58, 64);
-        color: white;
-        border-color: white;
-        border-radius: 7px;
-        padding: 15px 32px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        max-width: 700px;
-        margin-inline: auto;
-        transition: background-color .2s ease-in-out;
-    }
-    small {
-        color: #fff;
-        opacity: 0;
-        transition: opacity 0.5s;
-    }
-    .sorry {
-        display:none;
-    }
-    .fade-in { animation: fadeIn 2s; }
-@keyframes fadeIn {
-    0% { opacity: 0; }
-    100% { opacity: 1; }
-}
+    gtag("js", new Date());
 
-.fade-in-touch {
-    opacity: 50%;
-    transition: ease-in 0.5s;
-}
-.fade-in-touch:hover {
-    opacity: 100%;
-    transition: ease-in 0.2s;
-}
-} 
+    gtag("config", "G-6SH0JK328E");
+  </script>
+  <script src="./js/clipboard.js"></script>
+
+  <!-- Start of the Header -->
+  <header>
+    <div class="logo">
+      <a href="#"
+        ><img
+          src="https://media.discordapp.net/attachments/1078717279191171133/1079138303237959710/Stencil.png"
+          alt="Logo"
+      /></a>
+    </div>
+    <div class="button">
+      <a
+        href="http://209.126.84.212:2071/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >map</a
+      >
+      <a
+        href="https://discord.com/invite/YMquCpZsTJ"
+        target="_blank"
+        rel="noopener noreferrer"
+        >discord</a
+      >
+      <a href="#join" id="antiMobile">join</a>
+    </div>
+  </header>
+
+  <body>
+    <div class="hero">
+      <img
+        src="https://media.discordapp.net/attachments/1078717279191171133/1079138303414108330/StencilBigLongBubbleThing.png"
+        alt="Stencil"
+      />
+    </div>
+    <div class="intro">
+      <h1>Welcome to <b>Stencil</b></h1>
+      <p class="fade-in-touch">
+        We offer advanced gameplay, custom features, and the best community
+        around. Our terrain is unlike anything you've ever seen before, and
+        you'll quickly fall in love with the stunning landscapes and intricate
+        details.
+      </p>
+      <p class="fade-in-touch">
+        Our custom features include exclusive abilities that you won't find
+        anywhere else and custom ranks defined by you. And with our professional
+        optimization and 3+ years experience, you'll never have to worry about
+        lag or downtime.
+      </p>
+      <p class="fade-in-touch">
+        But be warned, the night is not for the faint of heart. The mobs have
+        been buffed based on your combined skill level and progress, making them
+        more challenging and exciting to fight. But don't worry, with our
+        community of fun and skilled players by your side, you'll always have
+        the support and resources you need to overcome even the toughest
+        challenges.
+      </p>
+      <p class="fade-in-touch">
+        We have a vibrant and active community of players who are always happy
+        to welcome new members and help out with any questions you may have.
+        Come join today and see for yourself why <b>Stencil</b> is the best
+        around.
+      </p>
+      <h2 class="ip" id="join">Join Stencil</h2>
+      <button onclick="copyText()">Click to Copy IP</button>
+      <h4 class="sorry">
+        Please visit this page on your Computer to copy the IP.
+      </h4>
+      <small id="copied">Copied to Clipboard!</small>
+      <h2 class="ver">
+        Supported Versions - <strong>1.19.x</strong><br />Java edition Only
+      </h2>
+      <script>
+        function copyText() {
+          Clipboard.copy("stencilmc.net");
+
+          let small = document.getElementById("copied");
+          small.style.opacity = 1;
+
+          setTimeout(() => {
+            small.style.opacity = 0;
+          }, 2000);
+        }
+      </script>
+    </div>
+  </body>
+</html>
