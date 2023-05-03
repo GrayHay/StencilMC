@@ -61,16 +61,14 @@
     
     .hero {
         background-image: url(https://cdn.discordapp.com/attachments/1078717279191171133/1079138616908976209/2022-06-08_11.37.51.png);
-        height: 80%;
+        height: 78vh;
         background-size:cover;
         background-position: bottom;
         padding-top: 77.1px;
     }
     .hero img {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 60%;
+        width: auto;
+        height: 70%;
     }
     .intro {
         display: flex;
