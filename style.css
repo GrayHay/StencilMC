@@ -14,10 +14,13 @@ body {
     background-size: cover;
     background-position: center;
     height: 100px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 50px 0 10px;
+    position: fixed;
+    z-index: 1;
 }
 .header img {
     height: 60px;
@@ -43,6 +46,7 @@ li a img:hover {
 /**========================  Body  ========================**/
 .spacer {
     padding: 20px 100px 20px 100px;
+    padding-top: 150px;
 }
 .content {
     font-family: 'Silkscreen', sans-serif;
