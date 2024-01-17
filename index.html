@@ -1,118 +1,107 @@
-<!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="css/desktop.css" />
-    <link rel="stylesheet" href="css/mobile.css" />
-    <link rel="stylesheet" href="css/pagesetup.css" />
-    <meta property="og:title" content="StencilMC.net - Minecraft Server" />
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>stencilmc.net</title>
+    <title>StencilMC.net - Home</title>
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/x-icon" href="server-icon.png" />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Silkscreen&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+    </style>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
-      rel="stylesheet"
-    />
   </head>
-  <!-- Google tag (gtag.js) -->
-  <script
-    async
-    src="https://www.googletagmanager.com/gtag/js?id=G-6SH0JK328E"
-  ></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() {
-      dataLayer.push(arguments);
-    }
-    gtag("js", new Date());
-
-    gtag("config", "G-6SH0JK328E");
-  </script>
-  <script src="./js/clipboard.js"></script>
-
-  <!-- Start of the Header -->
-  <header>
-    <div class="logo">
-      <a href="#"
-        ><img
-          src="https://media.discordapp.net/attachments/1078717279191171133/1079138303237959710/Stencil.png"
-          alt="Logo"
-      /></a>
-    </div>
-    <div class="button">
-      <a
-        href="https://map.stencilmc.net"
-        target="_blank"
-        rel="noopener noreferrer"
-        >map</a
-      >
-      <a
-        href="https://discord.com/invite/YMquCpZsTJ"
-        target="_blank"
-        rel="noopener noreferrer"
-        >discord</a
-      >
-      <a href="#join" id="antiMobile">join</a>
-    </div>
-  </header>
-
   <body>
-    <div class="hero">
-      <img
-        src="https://media.discordapp.net/attachments/1078717279191171133/1079138303414108330/StencilBigLongBubbleThing.png"
-        alt="Stencil"
-      />
+    <div class="header">
+      <img src="images/LogoLongPixelPerfectScaled.png" alt="" />
+      <ul>
+        <!-- <li>
+          <span
+            ><a href="#" target=""><img src="images/home.png" alt="" /></a
+          ></span>
+        </li> -->
+        <li>
+          <span
+            ><a href="https://discord.gg/HDNfDyxV5f" target="_blank"
+              ><img src="images/discord.png" alt="" /></a
+          ></span>
+        </li>
+        <!-- <li>
+          <span
+            ><a href="#" target=""><img src="images/join.png" alt="" /></a
+          ></span>
+        </li> -->
+      </ul>
     </div>
-    <div class="intro">
-      <h1>Welcome to <b>Stencil</b></h1>
-      <p class="fade-in-touch">
-        We offer advanced gameplay, custom features, and the best players. Our world is unlike anything you've ever seen before, and
-        you'll quickly fall in love with the stunning landscapes.
-      </p>
-      <p class="fade-in-touch">
-        We have exclusive custom abilities that you won't find
-        anywhere else. With our professional
-        optimization and 3+ years experience, you'll never have to worry about
-        lag or downtime.
-      </p>
-      <p class="fade-in-touch">
-        Nobody likes a fully custom, beautiful landscape with no immersion, so we have
-        incorperated all 4 seasons: Spring, Summer, Winter, and Fall into the
-        game for a more immerse experince. You must take cover as your body
-        temperature is important! Don't get too hot or too cold or you could die!
-      </p>
-      <p class="fade-in-touch">
-        We like to boast about our players. We've never had someone who says
-        we are toxic. We have always kept a positive and friendly outlook to
-        all who play on Stencil so you can enjoy your time here. Our community of players are always happy
-        to welcome you and help you out with any questions you may have.
-        Come join today and see for yourself why <b>Stencil</b> is the best
-        around.
-      </p>
-      <h2 class="ip" id="join">Join Stencil</h2>
-      <button onclick="copyText()">Click to Copy IP</button>
-      <h4 class="sorry">
-        Please visit this page on your Computer to copy the IP.
-      </h4>
-      <small id="copied">Copied to Clipboard!</small>
-      <h2 class="ver">
-        Supported Versions - <strong>1.19.x</strong><br />Java edition Only
-      </h2>
-      <script>
-        function copyText() {
-          Clipboard.copy("stencilmc.net");
+    <div class="spacer">
+      <div class="content">
+        <div class="table">
+          <div class="table-left">
+            <p class="l">Hey! Welcome to Stencil.</p>
+            <p class="m">A custom towny experience!</p>
+            <p class="l invert">stencilmc.net <span class="s">(Copy)</span></p>
+          </div>
+          <div class="table-right">
+            <img src="images/2022-02-06_14.01.32.png" alt="" />
+          </div>
+        </div>
 
-          let small = document.getElementById("copied");
-          small.style.opacity = 1;
+        <div class="table">
+          <div class="table-left">
+            <img src="images/2022-02-06_14.01.32.png" alt="" />
+          </div>
+          <div class="table-right">
+            <p class="m">
+              With over five years of development experience, we have the skills
+              to give you the
+              <span class="invert">best minecraft experience.</span>
+            </p>
+          </div>
+        </div>
 
-          setTimeout(() => {
-            small.style.opacity = 0;
-          }, 2000);
-        }
-      </script>
+        <div class="table">
+          <div class="table-left">
+            <p class="m">
+              Experience <span class="invert">breathtaking terrain</span> as you
+              explore the world!
+            </p>
+          </div>
+          <div class="table-right">
+            <img src="images/2022-02-06_14.01.32.png" alt="" />
+          </div>
+        </div>
+
+        <div class="table">
+          <div class="table-left">
+            <img src="images/2022-02-06_14.01.32.png" alt="" />
+          </div>
+          <div class="table-right">
+            <p class="l invert">Build your dream house</p>
+            <p class="m">
+              with hundreds of fully custom building materials, all craftable
+              within the crafting table or by purchasing them with Stencil
+              currency from the Stencil Mall.
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <div class="footer">
+      <img src="images/footer.png" alt="" />
+    </div>
+    <div class="end">
+      <div class="sitemap">
+        <a href="https://discord.gg/HDNfDyxV5f">Discord</a>
+        <a href="#sitemap">Store</a>
+        <a href="#">Terms of Service</a>
+        <a href="#">Privacy Policy</a>
+      </div>
+      <p>Copyright © StencilMC 2024. All rights reserved.</p>
+      <p>StencilMC is not affiliated with Mojang, AB</p>
+    </div>
+
+    <div id="custom-cursor"></div>
   </body>
 </html>
